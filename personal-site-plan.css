@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
@@ -173,7 +173,7 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
-=======
+}
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
@@ -348,5 +348,4 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
->>>>>>> 73366a3b291ad96b595a1789bbb971697fb5dbf8
 }
