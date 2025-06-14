@@ -4,6 +4,10 @@ Any spaces in your font name should be replaced with a +.
 Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Ms+Madi&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+img {
+  width: 600px;
+}
+
 :root {
   --primary-color: #354024;
   --secondary-color: #889063;
