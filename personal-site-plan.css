@@ -3,6 +3,7 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Ms+Madi&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
 
 img {
   width: 600px;
@@ -18,6 +19,7 @@ img {
   /* change the values below to your chosen font(s) */
   --heading-font: Forum, serif;
   --paragraph-font: Nunito, sans-serif;
+  --logo-h1-font: Meow Script, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #354024;  /* headlines on a white background */ 
@@ -177,4 +179,8 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+.logo {
+  font-family: var(--logo-h1-font);
 }
