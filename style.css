@@ -23,24 +23,111 @@
 }
 
 header {
-   
+  background-color: var(--nav-background-color);
+  position: sticky;
+  top: 0;
 }
 
 nav {
     background-color: var(--nav-background-color);
+    z-index: 4;
+    height: 30px;
 }
 
 a {
   color: var(--nav-link-color);
   width: 100px;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:link {
+  color: var(--nav-link-color);
+  background-color: var(--nav-background-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  text-decoration: none;
 }
 
 #logotext {
     font-family: var(--logo-h1-font);
     text-decoration: none; 
     font-size: 1.5em;
+    margin: 0;
+    width: 200px;
+    float: left;
 }
 
 #logoimg {
-    width: 10%;
+    float: left;
+    object-fit: contain;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+/*#logo {
+  width: 400px;
+}*/
+
+body {
+  margin: auto;
+  width: 100%;
+  background-color: var(--paragraph-color-on-color);
+}
+
+main {
+  z-index: -1;
+  margin: auto;
+  width: 90%;
+  background-color: var(--paragraph-background-color);
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 1em;
+}
+
+.top {
+  margin: 50px;
+}
+
+h1 {
+  padding: 0px auto;
+  text-align: center;
+  color: var(--headline-color-on-color)
+}
+
+h2 {
+  text-align: center;
+  font-family: Nunito;
+  color: var(--headline-color-on-color);
+}
+
+div {
+  width: 90%;
+  margin: auto; 
+  border: var(--accent2-color) 2px solid;
+}
+
+img {
+  width: 100%;
+  height: 12em;
+  object-fit: cover;
+}
+
+p {
+  color: var(--paragraph-color-on-color);
+  font-family: Nunito;
+}
+
+footer {
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
 }
