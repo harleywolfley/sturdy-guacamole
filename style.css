@@ -14,30 +14,32 @@
   --headline-color-on-white: #354024;  /* headlines on a white background */ 
   --headline-color-on-color: #CFBB99; /* headlines on a colored background */ 
   --paragraph-color-on-white: #4C3D19; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #889063; /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: #cdd5a9; /* paragraph text on a colored background */ 
   --paragraph-background-color: #354024;
-  --nav-link-color: #889063;
+  --nav-link-color: #cdd5a9;
   --nav-background-color: #4C3D19;
   --nav-hover-link-color: #4C3D19;
-  --nav-hover-background-color: #889063;
+  --nav-hover-background-color: #cdd5a9;
 }
 
 header {
   background-color: var(--nav-background-color);
   position: sticky;
   top: 0;
+  height: 60px;
+  border-bottom: var(--accent2-color) solid 2px;
 }
 
 nav {
     background-color: var(--nav-background-color);
     z-index: 4;
     height: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 a {
   color: var(--nav-link-color);
-  width: 100px;
-  float: left;
   text-decoration: none;
   text-align: center;
 }
@@ -54,13 +56,18 @@ a:hover {
   text-decoration: none;
 }
 
+.header-link {
+  font-size: 1.25em;
+}
+
 #logotext {
     font-family: var(--logo-h1-font);
     text-decoration: none; 
     font-size: 1.5em;
     margin: 0;
-    width: 200px;
+    width: 150px;
     float: left;
+    padding: 15.6px 0;
 }
 
 #logoimg {
@@ -69,11 +76,8 @@ a:hover {
     height: 40px;
     width: 40px;
     text-align: center;
+    padding: 10px;
 }
-
-/*#logo {
-  width: 400px;
-}*/
 
 body {
   margin: auto;
@@ -83,7 +87,9 @@ body {
 
 main {
   z-index: -1;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -50px;
   width: 90%;
   background-color: var(--paragraph-background-color);
 }
@@ -92,14 +98,14 @@ section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   padding: 1em;
+  padding-bottom: 1em;
 }
 
 .top {
-  margin: 50px;
+  margin-top: 50px;
 }
 
 h1 {
-  padding: 0px auto;
   text-align: center;
   color: var(--headline-color-on-color)
 }
@@ -125,9 +131,64 @@ img {
 p {
   color: var(--paragraph-color-on-color);
   font-family: Nunito;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 26.5px;
+  margin-bottom: 26.5px;
 }
 
 footer {
   background-color: var(--nav-background-color);
   color: var(--nav-link-color);
+  margin-bottom: -25px;
+}
+
+/*Fruit SubPage Specific*/
+.fruitlabel {
+  padding-top: 50px;
+}
+
+.banner {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: var(--accent2-color) solid 2px;
+  width: 1321.51px;
+}
+
+.fruitarticle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fruitp {
+  width: 58%;
+  padding: 30px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.fruitmainbottom {
+  width: 58%;
+  padding: 30px;
+  height:fit-content;
+  object-fit: contain;
+}
+
+.fruitmainright {
+  float: right;
+  width: 30%;
+  padding: 30px;
+  padding-left: 0;
+  height: fit-content;
+  margin-top: -150px;
+}
+
+.fruitgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fruitgridimg {
+  height: 350px;
+  border: var(--accent2-color) solid 2px;
 }
