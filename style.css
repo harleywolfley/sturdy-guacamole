@@ -144,6 +144,20 @@ p {
   padding-right: 8px;
   margin-top: 26.5px;
   margin-bottom: 26.5px;
+  overflow: auto;
+} 
+
+li {
+}
+
+ul, ol {
+   color: var(--paragraph-color-on-color);
+  font-family: Nunito;
+  padding-left: 30px;
+  padding-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: auto;
 }
 
 li {
@@ -235,7 +249,10 @@ footer {
 
 .proteinp {
   text-align:unset;
+<<<<<<< HEAD
   overflow: auto;
+=======
+>>>>>>> 47e304d2507e84aa253a798ed081d90b4dfdaa71
 }
 
 .rawleft {
